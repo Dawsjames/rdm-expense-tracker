@@ -1,7 +1,7 @@
-<template>
-  <router-view />
-</template>
+<template lang="pug">
+  #q-app
+    router-view
+  </template>
 
-<script setup lang="ts">
-//
+<script lang="ts">
 </script>
