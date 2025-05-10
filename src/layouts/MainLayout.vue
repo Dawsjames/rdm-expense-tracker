@@ -1,26 +1,12 @@
 <template lang="pug">
-  q-layout(view="lHh Lpr lFf")
+  q-layout(view="hHh lpR fFf")
+    AppHeader
     q-page-container
       router-view
-    
-    
-    q-dialog(v-model="addTransactionDialog")
-      q-card
-        q-card-section
-          .text-h6 Add Transaction
-        q-card-section
-          p Transaction form will go here
-        q-card-actions(align="right")
-          q-btn(flat, label="Cancel", color="primary", v-close-popup)
-          q-btn(flat, label="Save", color="primary", v-close-popup)
+    MobileNavbar
   </template>
 
 <script setup lang="ts">
-
+import AppHeader from 'src/components/common/AppHeader.vue';
+import MobileNavbar from 'src/components/common/MobileNavbar.vue';
 </script>
-
-<style lang="scss">
-body {
-  background-color: #f5f5f5;
-}
-</style>
